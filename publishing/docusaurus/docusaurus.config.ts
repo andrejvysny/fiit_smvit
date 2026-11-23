@@ -6,23 +6,23 @@ const {
   COMMIT_SHA = 'local',
   BUILD_DATE = '',
   GITHUB_REPO_URL = '',
-  SITE_URL = 'https://knife-framework.github.io',
-  BASE_URL = '/knifes_overview/',
+  SITE_URL = 'https://andrejvysny.github.io',
+  BASE_URL = '/fiit_smvit/',
 } = process.env;
 
 const commitLink =
   GITHUB_REPO_URL && COMMIT_SHA ? `${GITHUB_REPO_URL}/commit/${COMMIT_SHA}` : '';
 
 const config: Config = {
-  title: 'KNIFE - STHDF 2026-2027 - Student Template',
+  title: 'HomeStore – 3D Printable NAS Storage Bays',
   url: SITE_URL,
   baseUrl: BASE_URL,
   deploymentBranch: 'gh-pages',
   favicon: 'img/favicon.ico',
 
   i18n: {
-    defaultLocale: 'sk',
-    locales: ['sk', 'en'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
@@ -59,18 +59,9 @@ const config: Config = {
       },
     },
     navbar: {
-      title: 'KNIFE - STHDF 2026-2027 - Student Template',
-      logo: {
-        alt: 'KNIFE',
-        src: 'img/logo.png',
-        srcDark: 'img/logo-dark.png',
-        target: '_self', // alebo '_blank' ak chceš nové okno
-        href: '/', // ← sem vložíš svoj cieľový link
-      },
+      title: 'HomeStore',
       items: [
-        { type: 'localeDropdown', position: 'left' },
-        { to: '/sk/about', label: 'About', position: 'right' },
-        { to: '/sk/help',  label: 'Help',  position: 'right' },
+        { to: '/sb35-specification', label: 'SB35 spec', position: 'left' },
         {
           href: commitLink || '#',
           label: `Release ${RELEASE_TAG} • ${COMMIT_SHA}`,
@@ -94,7 +85,7 @@ const config: Config = {
       style: 'dark',
       copyright: `
   <div style="text-align:center;">
-    © ${new Date().getFullYear()} SystemThinking<br/>
+    © ${new Date().getFullYear()} Andrej Vyšný · HomeStore<br/>
     🔖 Release: <strong>${RELEASE_TAG}</strong><br/>
     💡 Commit: <code>${COMMIT_SHA}</code><br/>
     🕒 Build: ${BUILD_DATE}

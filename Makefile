@@ -212,8 +212,6 @@ build-clean: ## Hard clean + sync + production build (istý reset publish/docs)
 	$(MAKE) build
 SY01-sync-content: ## Sync SSOT content → publishing/docusaurus/docs (hard, delete)
 	@if [ ! -d "$(CONTENT_DOCS_DIR)" ]; then echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1; fi
-	@$(MAKE) --no-print-directory knifes-overview LOCALE=sk
-	@$(MAKE) --no-print-directory knifes-overview LOCALE=en
 	@mkdir -p "$(PUB_DOCS_DIR)"
 	rsync -av --delete --checksum \
 	  --exclude 'assets/' \

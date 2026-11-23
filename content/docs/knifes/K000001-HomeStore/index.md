@@ -48,7 +48,16 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import StepViewer from '@site/src/components/StepViewer';
+
 # HomeStore – 3D Printable Custom NAS Storage Bays
+
+<figure>
+  <img src={useBaseUrl('/assets/homestore/images/synology-ds1825plus.png')} alt="" style={{maxHeight: 260, display: 'block', margin: '0 auto'}} />
+  <figcaption style={{textAlign: 'center'}}><small>Illustration only: off-the-shelf NAS (Synology DS1825+). Image © Synology Inc.</small></figcaption>
+</figure>
 
 HomeStore is a modular NAS tower whose drive storage is built from **3D-printed bays**.
 Each bay is a fixed, open cage with a removable caddy. You slide the caddy in from the front,
@@ -137,6 +146,14 @@ SB35_ASSEMBLY
   Record the exact filament and process for every test.
 - Test de-energised first. Mechanical mating does **not** prove live hot-swap.
 
+## 🧊 3D preview
+
+NAS tower storage rows: M30 = 8× 3.5" bays at 36 mm pitch, M40 = 12× 2.5" bays stacked above.
+Drag to rotate, scroll to zoom, right-drag to pan. Download:
+[NAS_TOWER_STORAGE_ROWS.step](/assets/homestore/models/NAS_TOWER_STORAGE_ROWS.step).
+
+<StepViewer src="/assets/homestore/models/NAS_TOWER_STORAGE_ROWS.step" />
+
 ## 📜 Detailed article
 
 The full engineering specification of the seed bay is published as
@@ -174,8 +191,9 @@ The full engineering specification of the seed bay is published as
 - [SFF-8146 – Serial ATA Connector Position in the 54×71 mm Form Factor](/assets/homestore/standards/SFF-8146.pdf)
 - [SFF-TA-1008 – Enterprise and Datacenter Standard Form Factor (E3)](/assets/homestore/standards/SFF-TA-1008.pdf)
 
-**3D models (.3mf)**
+**3D models (.3mf, .step)**
 
+- [NAS_TOWER_STORAGE_ROWS.step](/assets/homestore/models/NAS_TOWER_STORAGE_ROWS.step) – full tower storage rows (M30 + M40), previewed above
 - [M30_BAY35_UNIT.3mf](/assets/homestore/models/M30_BAY35_UNIT.3mf) – M30 storage module 3.5" bay unit study
 - [HDD_Cages-All_Sizes_PETG.3mf](/assets/homestore/models/HDD_Cages-All_Sizes_PETG.3mf) – reference design
   "HDD Cage | 1 – 6 Bays" by **Moonyx**, licensed **CC BY-NC-SA**. It is redistributed unmodified

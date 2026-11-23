@@ -36,15 +36,18 @@
     "@docusaurus/preset-classic": "^3.9.2",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "occt-import-js": "^0.0.23",
     "prism-react-renderer": "^2.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "three": "^0.170.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.9.2",
     "@docusaurus/plugin-client-redirects": "^3.9.2",
     "@docusaurus/tsconfig": "^3.9.2",
     "@docusaurus/types": "^3.9.2",
+    "@types/three": "^0.170.0",
     "cross-env": "^7.0.3",
     "cssnano": "6.0.1",
     "csv-parse": "^6.1.0",
